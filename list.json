@@ -1,17 +1,17 @@
 {
-    "cap": {
+    "cap": [
         "de3f1114622b42ef365e476078176c912365595dd29f3d7ae511ecd12bacdea9e10bd021b6ab1f7a7f1677e6740260e1c5ce56fd273b8b21917b4b12fc2ca9b2"
-    },
-    "nat": {
+    ],
+    "nat": [
         "f9448f1d9c48a664758eab111caabe06973fc3829c82dd995db3f1fae46cecaab4dff4e06403c9f62cfa121c8ece038bec347d039dd161f3a590b68663ea88c6"
-    },
-    "jac": {
+    ],
+    "jac": [
         "e66db3608dee5d4606bcf24855877739d436c736904c05b307cce8d0d5428c556efeb0410a797796bb5978243258167269d05e1f776c8d4550f1f3b3a203bc23"
-    },
-    "faw": {
+    ],
+    "faw": [
         "a747508c2ecd42a4fc05fc0d218ece6d91470af8ee3ac4b14969caf7659d8ba38dd9bd0d8834efd386cff242c5b34a5e95ee703c565fe4bff9f0ad6482599bb6"
-    },
-    "max": {
+    ],
+    "max": [
         "818e37477d81c2019d6bd798c45a3ccbee04cb6777af9189230cf540be1bddc13e1e6ec9caa37e4af66e9e9cf8320aba98161e24a6a575c7aac18541d7a1f02b"
-    }
+    ]
 }
