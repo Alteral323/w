@@ -1,16 +1,17 @@
 local list = game:GetService("HttpService"):JSONDecode(game:HttpGet("https://raw.githubusercontent.com/Alteral323/w/main/list.json", true))
-local sha = loadstring(game:HttpGet("https://raw.githubusercontent.com/Alteral323/w/main/sha.lua"))()
+local sha = loadstring(game:HttpGet("https://raw.githubusercontent.com/Alteral323/w/main/sha.lua"))().sha512
+local tfind = table.find
 local cache = {}
 local find = function(tab, obj)
     for _, v in pairs(tab) do
-        if v == obj or type(v) == "table" and table.find(v, obj) then
+        if v == obj or type(v) == "table" and tfind(v, obj) then
             return v
         end
     end
     return nil
 end
 local create = function(str)
-    return sha.sha512(tostring(str) .. "VC")
+    return sha(tostring(str) .. "VC")
 end
 local hash = function(str)
     str = tostring(str)
@@ -20,8 +21,8 @@ local hash = function(str)
     return cache[str] or ""
 end
 return {
-    check = function(plr)
-        return find(list, hash(plr.UserId))
+    check = function(player)
+        return find(list, hash(player.UserId))
     end,
     make = create
 }
